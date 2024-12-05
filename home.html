@@ -47,11 +47,39 @@
 
 <!-- Main Content -->
 <div class="container">
-    <div>
-        <img src="automaster.png" alt="Imagem à Esquerda" style="width: 200px; height: auto;">
+        <div class="d-flex flex-column align-items-center">
+            <!-- Imagem -->
+            <img src="automaster.png" alt="Imagem à Esquerda" style="width: 200px; height: auto;">
+    
+            <!-- Botão abaixo da imagem -->
+            <button type="button" class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar!
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">AGENDAMENTO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            não estamos agendando nada, pois essa página não passa de um trabalho acadêmico e não de uma página de um empresa real, lamentamos o transtorno
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <br>
+    <br>
 
-    <div class="d-flex flex-column align-items-end">   
+    <div class="d-flex flex-column align-items-center">   
         <!-- Especialidades -->
         <div class="card border-success mb-3" style="width: 50%;">
             <div class="card-header text-center bg-light text-success fw-bold">
@@ -66,44 +94,64 @@
             </div>
         </div>
 
+        
+
         <!-- Comentários -->
-        <div class="card border-success" style="width: 50%;">
-            <div class="card-header text-center bg-light text-success fw-bold">
-                Comentários
-            </div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <h5 class="mb-0">Jorge Aragão</h5>
-                     <div class="d-flex align-items-center mb-2">
-                        <!-- Estrelas -->
-                    <span class="text-warning">&#9733;</span>
-                    <span class="text-secondary">&#9734;&#9734;&#9734;&#9734;</span>
-                    </div>
-                    <p class="mb-0 text-muted">
-                        Pior oficina que eu já fui, queria fazer apenas um balanceamento e condenaram meu motor. Não recomendo nem pro meu pior inimigo.
-                    </p>
-                </div>
-                <div>
-                    <h5 class="mb-0">Jessé Gomes da Silva</h5>
-                     <div class="d-flex align-items-center mb-2">
-                        <!-- Estrelas -->
-                    <span class="text-warning">&#9733;&#9733;</span>
-                    <span class="text-secondary">&#9734;&#9734;&#9734;</span>
-                    </div>
-                    <p class="mb-0 text-muted">
-                        Me cobraram uma troca de carburador sendo que meu carro tem partida elétrica.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
+          
+          <div class="card border-success" style="width: 50%;">
+              <div class="card-header text-center bg-light text-success fw-bold">
+                  Comentários
+              </div>
+              <div id="comentariosCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicadores -->
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#comentariosCarousel" data-bs-slide-to="0" class="active" aria-label="Comentário 1"></button>
+                      <button type="button" data-bs-target="#comentariosCarousel" data-bs-slide-to="1" aria-label="Comentário 2"></button>
+                  </div>
+                  
+                  <!-- Slides -->
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="card-body">
+                              <h5 class="mb-0">Jorge Aragão</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                  <span class="text-warning">&#9733;</span>
+                                  <span class="text-secondary">&#9734;&#9734;&#9734;&#9734;</span>
+                              </div>
+                              <p class="mb-0 text-muted">
+                                  Pior oficina que eu já fui, queria fazer apenas um balanceamento e condenaram meu motor. Não recomendo nem pro meu pior inimigo.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="card-body">
+                              <h5 class="mb-0">Jessé Gomes da Silva</h5>
+                              <div class="d-flex align-items-center mb-2">
+                                  <span class="text-warning">&#9733;&#9733;</span>
+                                  <span class="text-secondary">&#9734;&#9734;&#9734;</span>
+                              </div>
+                              <p class="mb-0 text-muted">
+                                  Me cobraram uma troca de carburador sendo que meu carro tem partida elétrica.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                
+          
+                  <!-- Controles -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#comentariosCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#comentariosCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                  </button>
+              </div>
+          </div>
+          
+        
+    
 
 
 

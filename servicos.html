@@ -13,7 +13,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-success bg-success">
     <div class="container">
-        <a class="navbar-brand text-white fw-bold" href="#">AUTOMASTER</a>
+        <a class="navbar-brand text-white fw-bold" href="home.html">AUTOMASTER</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,6 +46,17 @@
                     font-family:Just Me Again Down Here;
                 ">Revisão</h5>
                 <p style = "margin:20px; font-family:Just Me Again Down Here;">Revisamos o seu carro para lhe dar total garantia que você deveria enfiar ele em um muro e tentar resgatar o seguro</p>
+                <p class="text-center">
+                    <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      CONSELHO!
+                    </a>
+                    
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      VENDA ESTÁ BOMBA PARA O FERRO VELHO
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -59,7 +70,16 @@
                     color: #00c853; /* Cor do preenchimento do texto */
                     font-weight: bold; /* Negrito para destacar */
                     font-family:Just Me Again Down Here;
-                ">Troca de Óleo</h5></div>
+                ">Troca de Óleo</h5>
+                <p style = "margin:20px; font-family:Just Me Again Down Here;">Temos todos os óleos que você possa procurar: Mineral, Artificial, Soja, Girassol, para cabelo, óleo de pele, óleos essenciais</p>  
+                <p class="text-center">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Água e óleo não se misturam " data-bs-content="Caso a água e óleo do seu carro tenham se misturado, traga seu carro para nós, por que vai ser caro de consertar">
+                        CONSELHO!
+                    </button>
+                          
+                  
+                </p>
+            </div>
         </div>
     </div>
     <!-- Terceiro Card -->
@@ -77,6 +97,14 @@
     <img src="/imagens/automaster.png" alt="Logo Automaster" style="width: 200px; height: auto;">
 </footer>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var popoverTrigger = document.querySelector('[data-bs-toggle="popover"]');
+    var popover = new bootstrap.Popover(popoverTrigger);
+  </script>
+
 </body>
 </html>
